@@ -8,6 +8,7 @@
 var flatiron = require('flatiron'),
     path = require('path'),
     routes = require('./lib/plugins/routes'),
+    rest = require('./lib/plugins/rest'),
     model = require('./lib/model/model'),
     handlebarsPlugin = require('./lib/plugins/handlebars'),
     connect = require('connect'),
@@ -62,6 +63,7 @@ app.use(model, {
           dburi: app.config.get('dburi')
         });
 
+app.use(rest);
 app.use(routes);
 
 app.start(port,
