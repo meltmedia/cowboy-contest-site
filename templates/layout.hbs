@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta charset="utf-8" />
+
+    <title>NotConf - {{title}}</title>
+
+    <link rel="stylesheet" href="/css/boilerplate.css" type="text/css" />
+    <link rel="stylesheet" href="/css/global.css" type="text/css" />
+    <link rel="stylesheet" href="/css/query.css" type="text/css" />
+
+    <script type="text/javascript" src="http://use.typekit.com/qou1mhh.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28689000-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    
+  </head>
+
+  <body>
+
+  <header>
+    <div id="header-content" class="clearfix">
+      <a href="/" title="NotConf" id="logo">NotConf</a>
+    </div>
+  </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="/results" title="Results" class="{{results}}">Results</a></li>
+    </ul>
+  </nav>
+  <div id="content" class="clearfix">
+    <section id="{{sectionId}}" class="section-content">
+      <div class="swap-content">{{{ body }}}</div>
+    </section>
+    <section id="sidebar">
+
+    </section>
+  </div>
+  <footer class="clearfix">
+    <div id="tech-prop">
+      <a href="https://github.com/meltmedia/notconf" target="_blank" title="Hosted on GitHub">Hosted on GitHub</a> &#38; <a href="http://flatironjs.org/" target="_blank" title="Running on Flatiron">Running on Flatiron</a>
+    </div>
+    <p>&#169; Copyright 2012 NotConf. All rights reserved. Powered by <a href="http://meltmedia.com" target="_blank" title="meltmedia">meltmedia</a>.</p>
+  </footer>
+
+  </body>
+  
+  <script type="text/javascript">var host = (("https:" == document.location.protocol) ? "https://secure." : "http://");document.write(unescape("%3Cscript src='" + host + "wufoo.com/scripts/embed/form.js' type='text/javascript'%3E%3C/script%3E"));</script>
+  <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="/js/history.min.js"></script>
+  <script type="text/javascript" src="/js/history.adapter.jquery.min.js"></script>
+  <script type="text/javascript" src="/js/history-app.js"></script>
+  
+</html>
