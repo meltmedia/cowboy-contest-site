@@ -1,0 +1,13 @@
+---
+title: Cowboy Costume Contest Entries
+sectionId: details
+---
+<h1>Entries</h1>
+<ul>
+{{#each entries}}
+  <li>
+    <h3><a href="http://twitter.com/#/{{this.twitter}}" target="_blank">{{this.firstName}} {{this.lastName}}</a></h3>
+    <img src="{{this.photo}}" />
+  </li>
+{{/each}}
+</ul>
