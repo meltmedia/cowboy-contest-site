@@ -8,8 +8,6 @@ $(document).ready(
     var callback = function(event) {
       event.preventDefault();
 
-              console.log('hi');
-
         var serializedData = $test.serializeArray(),
             i=0, data = {};
 
@@ -43,7 +41,7 @@ $(document).ready(
                   data: file,
                   type: 'POST',
                   processData: false,
-                  contentType: 'application/octet-stream',
+                  contentType: 'multipart/form-data',
                   headers: {'X-File-Name': file.fileName},
                   progress: function() {
                     console.log('progress');
