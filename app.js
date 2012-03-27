@@ -9,6 +9,7 @@ var flatiron = require('flatiron'),
     path = require('path'),
     routes = require('./lib/plugins/routes'),
     rest = require('./lib/plugins/rest'),
+    voting = require('./lib/plugins/voting'),
     model = require('./lib/model/model'),
     handlebarsPlugin = require('./lib/plugins/handlebars'),
     connect = require('connect'),
@@ -66,6 +67,7 @@ app.use(model, {
 app.use(rest);
 app.use(routes);
 
+
 app.start(port,
   function(err) {
     if(err) throw err;
@@ -75,3 +77,5 @@ app.start(port,
     app.log.info("   on port :", port);
     app.log.info("   in mode :", app.env);
   });
+  
+app.use(voting);
