@@ -67,7 +67,6 @@ app.use(model, {
 app.use(rest);
 app.use(routes);
 
-
 app.start(port,
   function(err) {
     if(err) throw err;
