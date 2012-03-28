@@ -14,9 +14,12 @@
     "express-uglify": "0.2.0",
     "mongoose": "2.5.11",
     "formidable": "1.0.9",
+    "date-utils": "1.2.10",
+    "oauth": ">=0.8.4", 
+    "cookies": "0.1.x",
+    "keygrip": "0.1.x",
     "imagemagick": "0.1.2",
-    "knox": "0.0.9",
-    "ntwitter": "0.2.10"
+    "knox": "0.0.9"
   },
   "devDependencies": {
     "api-easy": "0.3.2",
