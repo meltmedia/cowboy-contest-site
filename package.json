@@ -15,7 +15,8 @@
     "mongoose": "2.5.11",
     "formidable": "1.0.9",
     "imagemagick": "0.1.2",
-    "knox": "0.0.9"
+    "knox": "0.0.9",
+    "ntwitter": "0.2.10"
   },
   "devDependencies": {
     "api-easy": "0.3.2",

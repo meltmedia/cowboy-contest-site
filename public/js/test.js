@@ -4,8 +4,7 @@ $.ajax({
     "token": "ZzP5jJSWknXiZ88Wl5gXJcRdK7KBWE",
     "firstName": "Luke",
     "lastName": "Karrys",
-    "twitter": "lukekarrys",
-    "gender": "male"
+    "twitter": "lukekarrys"
   }),
   type: 'POST',
   dataType: 'json',
