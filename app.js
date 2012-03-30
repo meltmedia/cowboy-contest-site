@@ -15,9 +15,12 @@ var flatiron = require('flatiron'),
     connect = require('connect'),
     expressUglify = require('express-uglify'),
     pkg = require('./package.json'),
+    winston = require('winston'),
     app = flatiron.app;
 
 app.config.file({ file: path.join(__dirname, 'config', 'config.json') });
+
+winston.add(winston.transports.File, { filename: 'console.log' });
 
 var port = app.config.get('port');
 
@@ -51,6 +54,8 @@ app.use(flatiron.plugins.http, {
 
 });
 
+
+
 app.use(handlebarsPlugin, {
           templates: __dirname + "/templates",
           defaultLayout: 'layout',
@@ -70,11 +75,14 @@ app.use(routes);
 app.start(port,
   function(err) {
     if(err) throw err;
-    app.log.info("      name :", pkg.name);
-    app.log.info("   version :", pkg.version);
-    app.log.info("started at :", Date());
-    app.log.info("   on port :", port);
-    app.log.info("   in mode :", app.env);
+    winston.info("      name :", pkg.name);
+    winston.info("   version :", pkg.version);
+    winston.info("started at :", Date());
+    winston.info("   on port :", port);
+    winston.info("   in mode :", app.env);
   });
+
+
   
+
 app.use(voting);

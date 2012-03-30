@@ -17,7 +17,8 @@
     "date-utils": "1.2.10",
     "ntwitter": "0.3.0",
     "imagemagick": "0.1.2",
-    "knox": "0.0.9"
+    "knox": "0.0.9",
+    "winston": "0.5.11"
   },
   "devDependencies": {
     "api-easy": "0.3.2",
