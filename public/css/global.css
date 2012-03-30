@@ -444,6 +444,41 @@ iframe.twitter-share-button {
   opacity: .8;
 }
 
+#entries {
+  padding: 0 4.25531915% 30px;
+  width: 91.4893617%
+}
+
+#entries ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+#entries ul li {
+  float: left;
+  margin: 2% 4% 2% 0;
+  width: 30.66666667%;
+}
+
+#entries ul li h3 {
+  margin-bottom: 5px;
+}
+
+#entries ul li:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+#entries ul li img {
+  width: 100%;
+}
+
+#entries h3 a { color: #2796aa; }
+#entries h3 a:hover { text-decoration: underline; }
+
+#entries .vote {
+  display: block;
+}
+
 /*------------------------
 Footer
 ------------------------*/

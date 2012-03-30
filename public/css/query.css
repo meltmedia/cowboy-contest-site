@@ -177,6 +177,15 @@ nav ul li.twitter {
   max-height: 17px;
 }
 
+#entries ul li, #entries ul li:nth-child(3n+3) {
+  margin: 2% 4% 2% 0;
+  width: 48%;
+}
+
+#entries ul li:nth-child(2n+2) {
+  margin-right: 0;
+}
+
 } /* end 700px wide */
 
 /* --- Max Screen 660px wide --- */
@@ -278,6 +287,10 @@ iframe.twitter-share-button {
   padding-top: 65px;
 }
 
+.entries #content {
+  padding-top: 30px;
+}
+
 } /* end 450px wide */
 
 /* --- Max Screen 430px wide --- */
@@ -305,6 +318,11 @@ and (max-width: 430px) {
 #sponsors #unicon img, #sponsors #nodeaz img {
   margin-top: 0;
   max-height: 100%;
+}
+
+#entries ul li, #entries ul li:nth-child(3n+3), #entries ul li:nth-child(2n+2) {
+  margin: 4% 0;
+  width: 100%;
 }
 
 } /* end 430px wide */
