@@ -1,7 +1,7 @@
 {
   "name": "cowboy-contest-site",
   "description": "Cowboy Contest Website",
-  "version": "0.0.0-1",
+  "version": "0.1.0",
   "private": false,
   "dependencies": {
     "union": "0.1.7",

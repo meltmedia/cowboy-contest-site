@@ -2,4 +2,3 @@ node_modules/*
 uploads
 .DS_Store
 *.log
-config/config.json
