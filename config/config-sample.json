@@ -1,0 +1,17 @@
+{
+  "port": "3051",
+  "dbuser": "",
+  "dbpass": "",
+  "dburi": "",
+  "twitterkeys" : {
+    "consumer_key": "",
+    "consumer_secret": "",
+    "access_token_key": "",
+    "access_token_secret": ""
+  },
+  "voting": {
+    "hashtag": "twitterwatchhashtag",
+    "start": "Sun Apr 1 15:00:00 -0700 2012",
+    "end": "Sun Apr 1 17:10:00 -0700 2012"
+  }
+}
