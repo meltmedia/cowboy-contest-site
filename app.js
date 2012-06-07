@@ -30,13 +30,6 @@ app.use(flatiron.plugins.http, {
    * Middleware
    */
   before: [
-/*
-    expressUglify.middleware({
-      src: __dirname + '/public',
-      logLevel: 'info',
-      loggerL: app.log
-    }),
-*/
     connect.static(__dirname + '/public', {maxAge: 86400000}),
     connect.staticCache()
   ],
@@ -81,8 +74,5 @@ app.start(port,
     winston.info("   on port :", port);
     winston.info("   in mode :", app.env);
   });
-
-
-  
 
 app.use(voting);

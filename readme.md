@@ -1,5 +1,27 @@
 # Cowboy Costume Contest Website
 
+This is a Node.js site built on top of [flatiron](http://flatironjs.org/) that was used to accept contest entries from a PhoneGap [application](https://github.com/meltmedia/cowboy-contest-app) and then watch Twitter for tweets containing a specific hashtag during a predetermined time range and count each tweet as a vote and save it to a mongodb.
+
+## Installation Instructions
+
+1) `git clone git@github.com:meltmedia/cowboy-contest-site.git`
+2) `cd cowboy-contest-site`
+3) `npm install`
+4) `cp config/config-sample.json config/config.json`
+5) Populate `config/config.json` with your mongodb credentials (we used [monqohq](https://mongohq.com/home)) and Twitter keys ([create an app if you haven't already](https://dev.twitter.com/apps/new))
+6) TODO: how to setup DB schema?
+6) `npm start`
+
+This will get your site up and running the port specified in the config file.
+
+## mongodb Integration
+
+We used [monqohq](https://mongohq.com/home) to host our mongodb, but other options should suffice as well. Check out `lib/model/model.js` for the schema we used to track entries and votes. There is also a Controller table that we used as an authentication tool to authorize entries based on a token.
+
+## Twitter Integration
+
+You first must [create an app](https://dev.twitter.com/apps/new) so that Twitter will supply you with the required keys to access the Twitter API. You must also decide on a hashtag to watch Twitter for as well as a start and stop time for the Twitter watch. All of this information goes in the config file.
+
 ### License MIT
 Copyright (c) 2012 meltmedia
 
