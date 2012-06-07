@@ -4,13 +4,12 @@ This is a Node.js site built on top of [flatiron](http://flatironjs.org/) that w
 
 ## Installation Instructions
 
-1) `git clone git@github.com:meltmedia/cowboy-contest-site.git`
-2) `cd cowboy-contest-site`
-3) `npm install`
-4) `cp config/config-sample.json config/config.json`
-5) Populate `config/config.json` with your mongodb credentials (we used [monqohq](https://mongohq.com/home)) and Twitter keys ([create an app if you haven't already](https://dev.twitter.com/apps/new))
-6) TODO: how to setup DB schema?
-6) `npm start`
+1. `git clone git@github.com:meltmedia/cowboy-contest-site.git`
+2. `cd cowboy-contest-site`
+3. `npm install`
+4. `cp config/config-sample.json config/config.json`
+5. Populate `config/config.json` with your mongodb credentials (we used [monqohq](https://mongohq.com/home)) and Twitter keys ([create an app if you haven't already](https://dev.twitter.com/apps/new))
+6. `npm start`
 
 This will get your site up and running the port specified in the config file.
 
